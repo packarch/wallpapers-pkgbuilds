@@ -1,10 +1,10 @@
-# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+# Maintainer: Fabrice Corraire <antidote1911@gmail.com>
 
-pkgname=archcraft-backgrounds-extra
+pkgname=packarch-backgrounds-gradient
 pkgver=1.0
 pkgrel=1
-pkgdesc="Extra wallpapers for Archcraft"
-url="https://github.com/archcraft-os/archcraft-wallpapers"
+pkgdesc="Gradient wallpapers for Packarch"
+url="https://github.com/packarch/packarch-wallpapers"
 arch=('any')
 license=('GPL3')
 makedepends=()
@@ -18,7 +18,7 @@ prepare() {
 }
 
 package() {
-	local _bgdir=${pkgdir}/usr/share/backgrounds/extra
+	local _bgdir=${pkgdir}/usr/share/backgrounds/gradient
 	mkdir -p "$_bgdir"
 	cp -r ${srcdir}/* "$_bgdir"
 }

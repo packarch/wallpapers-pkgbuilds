@@ -1,0 +1,25 @@
+# Maintainer: Fabrice Corraire <antidote1911@gmail.com>
+
+pkgname=packarch-backgrounds-branding
+pkgver=1.0
+pkgrel=1
+pkgdesc="Branding wallpapers for Packarch"
+url="https://github.com/packarch/packarch-wallpapers"
+arch=('any')
+license=('GPL3')
+makedepends=()
+depends=()
+conflicts=()
+groups=(packarch-wallpapers)
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+prepare() {
+	cp -af ../files/. ${srcdir}
+}
+
+package() {
+	local _bgdir=${pkgdir}/usr/share/backgrounds/packarch
+	mkdir -p "$_bgdir"
+	cp -r ${srcdir}/* "$_bgdir"
+}

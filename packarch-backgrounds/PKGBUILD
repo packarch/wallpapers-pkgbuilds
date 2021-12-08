@@ -1,16 +1,16 @@
-# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+# Maintainer: Fabrice Corraire <antidote1911@gmail.com>
 
-pkgname=archcraft-backgrounds
+pkgname=packarch-backgrounds
 pkgver=1.0
 pkgrel=1
-pkgdesc="Default wallpapers for Archcraft"
-url="https://github.com/archcraft-os/archcraft-wallpapers"
+pkgdesc="Default wallpapers for Packarch"
+url="https://github.com/packarch/packarch-wallpapers"
 arch=('any')
 license=('GPL3')
 makedepends=()
 depends=()
 conflicts=()
-groups=(archcraft-wallpapers)
+groups=(packarch-wallpapers)
 provides=("${pkgname}")
 options=(!strip !emptydirs)
 
