@@ -1,0 +1,24 @@
+# Maintainer: Fabrice Corraire <antidote1911@gmail.com>
+
+pkgname=packarch-backgrounds-minimal
+pkgver=1.0
+pkgrel=1
+pkgdesc="Minimal wallpapers for Packarch"
+url="https://github.com/packarch/packarch-wallpapers"
+arch=('any')
+license=('GPL3')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+prepare() {
+	cp -af ../files/. ${srcdir}
+}
+
+package() {
+	local _bgdir=${pkgdir}/usr/share/backgrounds/minimal
+	mkdir -p "$_bgdir"
+	cp -r ${srcdir}/* "$_bgdir"
+}
