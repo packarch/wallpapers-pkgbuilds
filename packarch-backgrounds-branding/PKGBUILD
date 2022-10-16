@@ -1,10 +1,10 @@
-# Maintainer: Fabrice Corraire <antidote1911@gmail.com>
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
 
 pkgname=packarch-backgrounds-branding
 pkgver=1.0
-pkgrel=1
+pkgrel=3
 pkgdesc="Branding wallpapers for Packarch"
-url="https://github.com/packarch/packarch-wallpapers"
+url="https://github.com/packarch-os/packarch-wallpapers"
 arch=('any')
 license=('GPL3')
 makedepends=()
